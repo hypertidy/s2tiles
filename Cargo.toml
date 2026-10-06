@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "s2tiles-core",
+]
+resolver = "2"

@@ -1,0 +1,14 @@
+[package]
+name = "s2tiles-core"
+version = "0.1.0"
+edition = "2021"
+description = "Arithmetic tile index for Sentinel-2 COGs — maps MGRS codes to COG IFD tile extents"
+license = "MIT"
+
+[dependencies]
+geoconvert = "1.0"
+serde = { version = "1", features = ["derive"], optional = true }
+
+[features]
+default = []
+serde = ["dep:serde", "geoconvert/serde"]
